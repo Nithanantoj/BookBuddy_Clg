@@ -1,0 +1,795 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+body {
+  background-color: #f8f8f8 !important;
+  font-family: "Kanit", sans-serif;
+ 
+}
+
+
+
+nav{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 100;
+  width: 1400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 5px 80px;
+  border-bottom: 2px solid #1755A7;
+
+}
+
+.navbar ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+
+.navbar li a{
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #1755A7;
+  margin-right: 0px;
+  transition: 0.3s ease-in-out;
+  display: flex;
+
+}
+
+.navbar li a:hover {
+  color: #f9b318;
+}
+
+.navbar li a:hover::after{
+  content: "";
+  width: 30%;
+  height: 2px;
+  background: #f9b318;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+
+
+
+.Home-content{
+  position: relative;
+  top: 20px;
+  min-height: 90vh; 
+  width: 100%; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Home-content h1{
+  color: #1755A7;
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 60px;
+  transition: 0.3s ease-in-out;
+  .bus_icon{
+    color: #f9b318;
+    transition: 0.3s ease-in-out;
+  }
+}
+
+.Home-content h1:hover{
+  color: #f9b318;
+  .bus_icon{
+    color: #1755A7;
+  }
+}
+
+.Home-content button{
+  background-color: #f9b318;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  width: 200px;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease-in-out;
+}
+
+.Home-content button:hover {
+  background-color: #f99708;
+}
+
+.login-container {
+  position: relative;
+  top: 75px;
+  width: 600px;
+  height: 400px;
+  margin: 100px auto;
+  padding: 20px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  box-shadow: 0 3px 5px #f9b21842;
+  background-color: #eaf6fa;
+  color: #1755A7;
+  font-size: 1.05rem;
+}
+
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group_role {
+  margin-bottom: 25px;
+  justify-content: space-around;
+}
+
+.form-group_role label,
+.form-group label {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.form-group input {
+  width: 100%;
+  height: 40px;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #1755A7;
+}
+
+.form-group_role select {
+  width: 200%;
+  height: 40px;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #1755A7;
+}
+
+.form-group_role select option{
+  background-color: white;
+  color: #1755A7;
+  font-weight: 500;
+  font-size: 1.05rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  
+}
+
+.form-group_role select option:hover{
+  background-color: #f99708;
+  color: white;
+}
+
+
+.form-group input:focus {
+  outline: none;
+  border: 2px solid #f9b318;
+}
+
+.link {
+  text-decoration: none;
+}
+
+
+.login-container button {
+  width: 100%;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f9b318;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+
+.login-container button:hover {
+  background-color: #f99708;
+}
+
+.login-container p a{
+  color: #f9b318;
+  transition: 0.3s ease-in-out;
+}
+
+.login-container p a:hover{
+  color: #f99708;
+}
+
+.ticket_parent{
+  display: flex;
+}
+
+.ticket_parent_left {
+  padding-top: 140px;
+  width: 10%;
+}
+
+.ticket_parent_left img{
+  position: fixed;
+}
+
+
+.ticket_parent_right {
+  margin-top: 70px;
+  padding-top: 200px;
+  width: 70%;
+  margin-left: 30%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px;
+}
+
+.ticket-card {
+  width: 400px;
+  height: 280px;
+  margin: 10px;
+  background-color: #eaf6fa;
+  padding: 20px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  color: black;
+  font-weight: 300;
+  transition: 0.3s ease-in-out;
+}
+
+.ticket-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 10px #f9b21842;
+}
+
+
+.ticket-card-header{
+  display: flex;
+  align-items: center;
+}
+
+.location_icon{
+  width: 80px;
+  height: 100px;
+  
+}
+
+.ticket-card div p{
+  margin-left: 20px;
+  padding: 4px 0px;
+}
+
+.count-btn{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 20px;
+  margin-bottom: 15px;
+  font-size: 1.05rem;
+  cursor: pointer;
+  border: none;
+  font-weight: 500;
+  transition: 0.3s ease-in-out;
+}
+
+.count-btn button {
+  width: 45px;
+  height: 25px;
+  background-color: #1755A7;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+}
+
+.count-btn button:hover {
+  background: linear-gradient(#f9b318,#f99708);
+}
+
+.count-btn p{
+  margin: 0px 20px;
+  color: #1755A7;
+}
+
+.Book_Now{
+  width: 100%;
+  padding: 6px;
+  font-weight: 500;
+  font-size: 1.1rem;
+  background-color: #1755A7;
+  color: white;
+  border: transparent;
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+
+}
+
+.Book_Now:hover {
+  background: linear-gradient(#f9b318,#f99708);
+}
+
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000; 
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 5px;
+  width: 400px;
+  text-align: center;
+  position: relative;
+  font-weight: 300;
+}
+
+.close {
+  position: absolute;
+  top: 2px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 35px;
+  font-weight: 400;
+  color: #f9b318;
+}
+
+.about-container {
+  position: relative;
+  top: 78px;
+  left : 120px;
+  width: 800px;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-section {
+  margin-bottom: 20px;
+}
+
+.about-container h1 {
+  color: #1755A7;
+
+  .bus_icon1{
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
+    color: #f9b318;
+  }
+  
+}
+
+.about-section h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #1755A7;
+}
+
+.about-section p, .about-section ul {
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+.about-section ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.container{
+  height: 80vh;
+}
+
+.register-container {
+  position: relative;
+  top: 15px;
+  width: 600px;
+  height: 580px;
+  margin: 100px auto;
+  padding: 5px 20px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  box-shadow: 0 3px 5px #f9b21842;
+  background-color: #eaf6fa;
+  color: #1755A7;
+  font-size: 1.05rem;
+}
+
+.register-container h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.register-container button {
+  width: 100%;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f9b318;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.register-container button:hover {
+  background-color: #f99708;
+}
+
+.register-container p a{
+  color: #f9b318;
+  transition: 0.3s ease-in-out;
+}
+
+.register-container p a:hover{
+  color: #f99708;
+}
+
+
+.reg_flex {
+  display: flex;
+  justify-content: space-between;
+  .form-group {
+    width: 48%;
+  }
+}
+
+.ticket-card-booking{
+  position: fixed;
+  width: 700px;
+  height: 200px;
+  margin: 10px;
+  margin-left: 40px;
+  background-color: #eaf6fa;
+  padding: 20px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  color: black;
+  font-weight: 300;
+  transition: 0.3s ease-in-out;
+}
+
+.ticket-card-booking:hover {
+  box-shadow: 0 5px 10px #f9b21842;
+}
+
+.ticket-card-booking div{
+  display: flex;
+  align-items: center;
+}
+
+.ticket-card-booking div p{
+  margin-top: -18px;
+  margin-left: 35px;
+  padding: 4px 8px;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #1755A7;
+  justify-content: space-between;
+}
+
+.ticket_img {
+  margin-left: 35px;
+  margin-top: -25px;
+  width: 160px;
+  height: 200px;
+  padding-right: 40px;
+  transition: 0.5s ease-in-out;
+}
+
+.ticket_img:hover {
+  transform: scale(1.1);
+}
+.ticket-card-booking-count {
+  margin-left: 100px;
+}
+
+.ticket-card-booking-count p{
+  font-size: 10rem;
+  font-weight: 500;
+}
+
+.passenger_details_card{
+  position: fixed;
+  top: 310px;
+  width: 700px;
+  height: 400px;
+  margin: 10px;
+  margin-left: 40px;
+  background-color: #eaf6fa;
+  padding: 20px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  color: black;
+  font-weight: 300;
+  transition: 0.3s ease-in-out;
+}
+
+.passenger_details_card:hover {
+  box-shadow: 0 5px 10px #f9b21842;
+}
+
+.passenger_details_card label{
+  font-size: 1rem;
+  font-weight: 400;
+  color: #1755A7;
+}
+
+.passenger_details_card_flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .form-group {
+    width: 48%;
+  }
+
+  .price-label{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #f99708;
+  }
+}
+
+.passenger_details_card_flex select{
+  padding: 10px 15px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.passenger_details_card_flex select:focus {
+  outline: none;
+  border: 2px solid #f9b318;
+}
+
+.passenger_details_card_flex button{
+  width: 150px;
+  padding: 6px;
+  font-weight: 500;
+  font-size: 1.1rem;
+  background-color: #1755A7;
+  color: white;
+  border: transparent;
+  border-radius: 5px;
+  transition: 0.3s ease-in-out; 
+}
+
+.passenger_details_card_flex button:hover {
+  background: linear-gradient(#f9b318,#f99708);
+}
+
+.booked-ticket-notification {
+  margin-top: 20px;
+  padding: 10px;
+  border: 2px solid #4CAF50;
+  background-color: #e8f5e9;
+  border-radius: 5px;
+}
+
+.booked-ticket-notification h3 {
+  color: #4CAF50;
+  margin-bottom: 10px;
+}
+
+.toast-notification{
+  width: 200px;
+  height: 300px;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ticket-card-noti{
+  height: 200px;
+  padding: 10px;
+  border: 2px solid #f99708;
+  background-color: #f9b21841;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.ticket-card-noti div{
+  margin-top: -45px;
+  color: #1755A7;
+
+}
+
+.ticket-card-noti div p{
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.ticket_img-noti{
+  margin-top: -40px;
+  width: 200px;
+  height: 150px;
+  margin-bottom: 10px;
+}
+
+.ticket-image{
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.ticket-card-mybookings{
+  width: 400px;
+  height: 280px;
+  margin: 10px;
+  background-color: #eaf6fa;
+  padding: 20px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  color: black;
+  font-weight: 300;
+  transition: 0.3s ease-in-out;
+  display: flex;
+}
+
+.ticket-card-mybookings div{
+  padding-left: 20px;
+}
+
+
+.ticket-card-mybookings div p,
+.ticket-card-mybookings div h3
+{
+  color: #1755A7;
+}
+
+.ticket-card-mybookings:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 10px #f9b21842;
+}
+
+.welcome-container{
+  width: 100%;
+  height: 80vh;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-container h1{
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #f9b318;
+  margin-bottom: 20px;
+  .bus_icon{
+    width: 50px;
+    height: 50px;
+    fill: #1755A7;
+    margin-right: 10px;
+  }
+}
+
+
+
+.welcome-container button{
+  width: 220px;
+  padding: 10px 20px;
+  font-weight: 600;
+  font-size: 1.2rem;
+  background: linear-gradient(#357ad5,#033577);
+  color: white;
+  border: transparent;
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+}
+
+.welcome-container button:hover {
+  background: linear-gradient(#f9b318,#f99708);
+}
+
+.ticket_parent_left h2 {
+  position: fixed;
+  width: 500px;
+  margin-left: 129px;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #1755A7;
+  margin-bottom: 20px;
+}
+
+.ticket_parent_right table{
+  width: 700px;
+  margin-top: 50px;
+  margin-left: 100px;
+  border-collapse: collapse;
+}
+
+.ticket_parent_right table th,
+.ticket_parent_right table td{
+  border-bottom: 1px solid #f9b318;
+  padding: 15px;
+  text-align: left;
+  font-size: 16px;
+  color: #1755A7;
+}
+
+.ticket_parent_right table th{
+  font-weight: 600;
+}
+
+.ticket_parent_right table td:nth-child(2){
+  font-weight: 500;
+}
+
+@media screen and (max-width: 992px) {
+  /* For mobile screens */
+ .ticket_parent_left h2 {
+  width: 100%;
+  }
+ .ticket_parent_right table{
+  width: 100%;
+  margin-left: 0;
+  }
+}
+
+.tod_button {
+  margin-top: 0px;
+  width: 150px;
+  padding: 10px 20px;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #1755A7;
+  border: 1px solid #1755A7;
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+}
+
+
+
+
+
